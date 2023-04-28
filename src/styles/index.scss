@@ -1,0 +1,13 @@
+body {
+  position: relative;
+  width: 1920px;
+  height: 1080px;
+  box-sizing: border-box;
+
+  // scale 缩放中心 左上角
+  transform-origin: left top;
+}
+
+// * {
+//   outline: 2px solid red;
+// }
