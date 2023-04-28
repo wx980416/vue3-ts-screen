@@ -1,7 +1,7 @@
 import { onMounted, onUnmounted } from 'vue';
 import _ from 'lodash';
 
-export function useScalePage(option: ScaleOption) {
+export default function useScalePage(option: ScaleOption) {
   // 节流函数
   const resizeFunc = _.throttle(() => {
     triggerScale();

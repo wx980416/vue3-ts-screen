@@ -4,8 +4,12 @@
     <div class="header"></div>
 
     <!-- 左侧 -->
-    <div class="left-top"></div>
-    <div class="left-bottom"></div>
+    <div class="left-top">
+      <pie-charts :echartsDatas="chargingPile"></pie-charts>
+    </div>
+    <div class="left-bottom">
+      <line-echarts :echartsDatas="processMonitoring"></line-echarts>
+    </div>
 
     <!-- 右侧 -->
     <div class="right-top"></div>
@@ -20,7 +24,32 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { ref } from 'vue';
+import {
+  chargingPileData,
+  processMonitoringData,
+  chargingStatisticsData,
+  exceptionMonitoringData,
+  dataAnalysisData,
+  chargingTop4Data,
+} from './data/home-data';
+import PieCharts from '@/components/pie-echarts.vue';
+import LineEcharts from '@/components/line-echarts.vue';
+
+// 充电桩饱和比例
+let chargingPile = ref(chargingPileData);
+// 流程监控
+let processMonitoring = ref(processMonitoringData);
+// 充电桩数据分析
+let chargingStatistics = ref(chargingStatisticsData);
+// 异常监控
+let exceptionMonitoring = ref(exceptionMonitoringData);
+// 充电桩数据分析
+let dataAnalysis = ref(dataAnalysisData);
+// 充电桩Top4占比
+let chargingTop4 = ref(chargingTop4Data);
+</script>
 
 <style scoped lang="scss">
 .screen-bg {

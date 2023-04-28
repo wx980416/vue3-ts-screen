@@ -4,7 +4,7 @@
   </div>
 </template>
 <script setup lang="ts">
-import { useScalePage } from '@/hooks/useScalePage';
+import useScalePage from '@/hooks/useScalePage';
 
 let option: ScaleOption = {
   targetX: 1920,
