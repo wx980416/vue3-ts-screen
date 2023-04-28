@@ -24,7 +24,7 @@ module.exports = {
     footer: '请输入要关闭的issue(待优化去除，跳过即可):',
     confirmCommit: '确认使用以上信息提交？(y/n/e/h)',
   },
-  allowCustomScopes: false,
-  skipQuestions: ['body', 'footer'],
-  subjectLimit: 72,
+  allowCustomScopes: true, // 是否允许自定义范围
+  skipQuestions: ['body', 'footer'], // 跳过的问题
+  subjectLimit: 72, // subject 最大长度
 };
