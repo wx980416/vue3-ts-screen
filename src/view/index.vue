@@ -13,7 +13,9 @@
 
     <!-- 右侧 -->
     <div class="right-top"></div>
-    <div class="right-center"></div>
+    <div class="right-center">
+      <bar-echarts :echartsDatas="chargingStatistics"></bar-echarts>
+    </div>
     <div class="right-bottom"></div>
 
     <!-- 中间 -->
@@ -33,9 +35,10 @@ import {
   exceptionMonitoringData,
   dataAnalysisData,
   chargingTop4Data,
-} from './data/home-data';
+} from '@/data/index';
 import PieCharts from '@/components/pie-echarts.vue';
 import LineEcharts from '@/components/line-echarts.vue';
+import BarEcharts from '@/components/bar-echarts.vue';
 
 // 充电桩饱和比例
 let chargingPile = ref(chargingPileData);

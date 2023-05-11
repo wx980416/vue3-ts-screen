@@ -17,7 +17,7 @@
             <polyline id="bottom_left" stroke="#00A2FF" stroke-width="2" points="29.975 196.971 1.991 196.971 1.991 168.987"></polyline>
             <polyline id="bottom_left-copy" stroke="#00A2FF" stroke-width="2" transform="translate(797.992000, 182.992000) scale(-1, 1) translate(-797.992000, -182.992000) " points="811.984 196.984 784 196.984 784 169"></polyline>
             <text id="text-copy-5" fill="url(#linearGradient-1)" font-family="SourceHanSansCN-Medium, Source Han Sans CN" font-size="22" font-weight="400">
-                <tspan x="331" y="29">充电桩数据分析 </tspan>
+                <tspan x="331" y="29">数据分析</tspan>
             </text>
         </g>
     </g>

@@ -2,7 +2,9 @@ import * as echarts from 'echarts';
 import { onUnmounted } from 'vue';
 
 export default function useEcharts(divEl: HTMLElement): UseEcharts {
-  const echartsInstance = echarts.init(divEl, { renderer: 'svg' });
+  const echartsInstance = echarts.init(divEl, undefined, {
+    renderer: 'svg',
+  });
 
   // 销毁实列
   onUnmounted(() => {

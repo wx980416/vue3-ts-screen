@@ -66,7 +66,7 @@ const getOption = (echartsDatas: ChargingPileData[]) => {
   let option: echarts.EChartsOption = {
     color: colors,
     title: {
-      text: `{nameSty| 充电桩总数}\n{number|${total}}`,
+      text: `{nameSty| 总数}\n{number|${total}}`,
       top: '50%',
       left: '30%',
       textStyle: {
@@ -74,7 +74,7 @@ const getOption = (echartsDatas: ChargingPileData[]) => {
           nameSty: {
             fontSize: 19,
             color: 'white',
-            padding: [10, 0],
+            padding: [10, 20],
           },
           number: {
             fontSize: 24,
